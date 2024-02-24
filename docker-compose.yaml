@@ -4,5 +4,3 @@ services:
   bot:
     build: ./bot
     command: python run.py
-    depends_on:
-      - redis
