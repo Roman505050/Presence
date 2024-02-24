@@ -1,6 +1,6 @@
 [submodule "bot"]
 	path = bot
 	url = https://github.com/Roman505050/Presence-Bot.git
-[submodule "celery-app"]
-	path = celery-app
-	url = https://github.com/Roman505050/Presence-Celery.git
+[submodule "schedule-app"]
+	path = schedule-app
+	url = https://github.com/Roman505050/Presence-Schedule.git
