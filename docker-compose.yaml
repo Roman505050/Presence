@@ -3,4 +3,14 @@ version: '3.8'
 services:
   bot:
     build: ./bot
-    command: python run.py
+    command: python -m src.run
+    depends_on:
+      - scheduler
+    ports:
+      - "5000:5000"
+  
+  scheduler:
+    build: ./schedule-app
+    command: python -m src.main
+    ports:
+      - "5001:5001"
